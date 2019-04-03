@@ -13,5 +13,20 @@ A learning repo for typescript
   * Provide consumers (including you) with a great DX (design experience)
 
 ## TypeScript Compiler 
-  * To compile typescript files run `tsc filename.ts --target ES2017 --module commonjs --watch` in the terminal
-  * To open up the compiled code run  `code filename.js` in the terminal
+ ### Manual Compiler setup
+  * To compile typescript files run 
+    ```tsc filename.ts --target ES2017 --module commonjs --watch``` in the terminal.
+  * To open up the compiled code run  `code filename.js` in the terminal.
+ ### Automated Setup
+  * To configure the tsc command to compile without the additional flags, create a tsconfig.json file.
+  * Set up the file as follows: 
+    ```
+      {
+        "compilerOptions": {
+          "module": "commonjs", 
+          "target": "ES2017",
+          "outDir": "lib"
+        },
+        "include": ["src", "tsconfig.json"]
+      } 
+    ```

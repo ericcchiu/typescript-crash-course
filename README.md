@@ -11,3 +11,7 @@ A learning repo for typescript
   * Catch common mistaktes (i.e. incomplete refactors) 
   * Move some runtime errors to compile time (earlier feedbacks, as opposed to learning of mistakes at runtime)
   * Provide consumers (including you) with a great DX (design experience)
+
+## TypeScript Compiler 
+  * To compile typescript files run `tsc filename.ts --target ES2017 --module commonjs --watch` in the terminal
+  * To open up the compiled code run  `code filename.js` in the terminal
